@@ -1,2 +1,3 @@
 aula 614 separação do css
-aula 615 
+aula 615 ok
+aula 616

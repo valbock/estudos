@@ -1,3 +1,4 @@
+//funções de fabrica.
 function criaCalculadora() {
   return {
     display: document.querySelector('.display'),

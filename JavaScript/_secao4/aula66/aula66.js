@@ -32,7 +32,19 @@ const pessoas = [
 // const idades = pessoas.map(obj => ({idade: obj.idade}));
 // console.log(idades);
 
-const comIds = pessoas.map()
+// // objeto original é afetado com passagem por referencia
+// const comIds = pessoas.map(function(Obj, indice) {
+// Obj.id = indice + 1;
+// return Obj;
+// });
+// console.log(pessoas);
+// console.log(comIds);
 
-tempo 14:54
-
+// copiando o objeto
+const comIds = pessoas.map(function(Obj, indice) {
+  const newObj = { ...Obj };
+  newObj.id = indice;
+  return newObj;
+  });
+  console.log(pessoas);
+  console.log(comIds);
